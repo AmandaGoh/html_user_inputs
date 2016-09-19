@@ -1,35 +1,60 @@
-general_assembly_logo.png
-
-General Assembly Account Creation
-
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
-
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
-
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
-
-Course:
-  (0) UX
-  ( ) Web Dev
-
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>General Assembly Account Creation</title>
+  </head>
+  <body>
+    <img src=general_assembly_logo.png>
+    <h2>
+      General Assembly Account Creation
+    </h2>
+    <p>
+      Welcome to the General Assembly. General Assembly is a global
+      institution training people all over the world in today's top
+      technologies.
+      <br><br>
+      Please fill out the information below to create your General Assembly
+      account. Let us know what city you're in and what course
+      you're taking. This list is for all students. Please tell us what
+      city you're in and whether you're taking the Immersive User Experience (UX)
+      course or the Immersive Web Development course.
+    </p>
+    <form action="#" method="post">
+      <label for="city">City:
+      <input list="city">
+      <datalist id="city">
+        <option value="Hong Kong">
+        <option value="London">
+        <option value="Los Angeles">
+        <option value="New York">
+        <option value="Portland">
+        <option value="San Francisco">
+        <option value="Seattle">
+        <option value="Singapore">
+      </datalist>
+      </label>
+    <br><br>
+      <label for="course">Course:
+      <input type="radio" name="course" value="UX" checked>UX
+      <input type="radio" name="course" value="Web Dev">Web Dev
+      </label>
+    <br><br>
+      <label for="name">Name:
+          <input id ="name" type="text" name="name" value="" required>
+      </label>
+    <br><br>
+      <label for="email">Email:
+        <input id ="email" type="text" name="email" value="" required>
+      </label>
+    <br><br>
+    <label for="password">Password:
+      <input id ="password" type="text" name="password" value="" required>
+    </label>
+    <br><br>
+      <input type="checkbox" name="subscribe" value="subscribe"> Yes, subscribe me to the General Assembly student newsletter
+      <br><br>
+      <input type="submit" value="Subscribe">
+    </form>
+  </body>
+</html>
